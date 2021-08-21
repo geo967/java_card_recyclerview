@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="30dp"
+        app:cardElevation="20dp"
+
+        app:cardBackgroundColor="#E1DEDE"
+        app:cardCornerRadius="30dp">
+
+    <ImageView
+        android:id="@+id/image"
+        android:src="@drawable/hello1"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:contentDescription="@string/image_to_display" />
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="65dp"
+        android:textColor="#8F0F0F"
+        android:layout_marginBottom="20dp"
+        android:textSize="16sp"
+
+        android:text="@string/my_image_hello_image"/>
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="@string/show"
+        android:layout_gravity="end"
+        android:layout_marginTop="40dp"/>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
